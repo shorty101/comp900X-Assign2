@@ -7,4 +7,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app works!';
+  sidebarHidden = "is-closed";
+  wrapperClass = "";
+
+  toggleSidebar() {
+    if (this.sidebarHidden === "is-closed") {
+      this.sidebarHidden = "is-open";
+      this.wrapperClass = "toggled";
+    } else {
+      this.sidebarHidden = "is-closed";
+      this.wrapperClass = "";
+    }
+  }
 }
