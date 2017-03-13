@@ -1,3 +1,60 @@
-<p>
-  calculator works!
-</p>
+<div class="row">
+  <div class="col-xs-10 col-xs-offset-1">
+    <h2>Home Loan Repayments Calculator</h2>
+    <p>Lorem ipsum dolor sit amet, 
+      consectetur adipiscing elit. 
+      Integer lacus lectus, pharetra 
+      non magna quis, condimentum 
+      vulputate lorem. Pellentesque 
+      convallis mi a elementum eleifend. 
+      Pellentesque sed urna ut ex tempus 
+      venenatis at at odio. Integer 
+      elementum porttitor arcu et 
+      lobortis. Donec eleifend, purus 
+      eget ornare vehicula, ipsum enim 
+      aliquam ex, non scelerisque arcu 
+      nibh a sem. Donec in ultrices 
+      nisl, vel porta diam. Maecenas 
+      quis tempor augue. Aenean 
+      elementum magna sit amet sagittis 
+      porta. Vivamus at tempus dui.</p>
+    <div class="col-xs-5" id="calculator-wrapper">
+      <form id="calculator">
+        <div class="form-group">
+          <label for="yearly_earnings">Yearly Earnings</label>
+          <input type="number" class="form-control" id="yearly_earnings" placeholder="60000">
+        </div>
+        <div class="form-group">
+          <label for="home_loan_remaining">Home Loan Remaining</label>
+          <input type="number" class="form-control" id="home_loan_remaining" placeholder="400000">
+        </div>
+        <div class="form-group">
+          <label for="interest_rate">Interest Rate</label>
+          <input type="number" class="form-control" id="interest_rate" placeholder="4.50" step="0.01">
+        </div>
+        <div class="form-group">
+          <label for="repayment_type">Repayment Type</label>
+          <select class="form-control">
+            <option value="weekly">Weekly</option>
+            <option value="monthly" selected>Monthly</option>
+            <option value="yearly">Yearly</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="interest_rate">Interest Rate</label>
+          <input type="number" class="form-control" id="interest_rate" placeholder="2100">
+        </div>
+        <div class="form-group">
+          <label for="repayment_type">Interest Calculated</label>
+          <select class="form-control">
+            <option value="monthly">Monthly</option>
+            <option value="yearly">Yearly</option>
+          </select>
+        </div>
+      </form>
+    </div>
+    <div class="col-xs-7" id="graph-wrapper">
+      <img class="img-responsive" src="/assets/images/home_loan_calc.png" style="width:100%;">
+    </div>
+  </div>
+</div>

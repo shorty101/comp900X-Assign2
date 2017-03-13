@@ -7,13 +7,11 @@ import { AlertModule } from 'ng2-bootstrap';
 
 import { AppComponent } from './app.component';
 import { FrontPageComponent } from './front-page/front-page.component';
-import { SidebarMenuComponent } from './sidebar-menu/sidebar-menu.component';
 import { ArticleComponent } from './article/article.component';
 import { CalculatorComponent } from './calculator/calculator.component';
 
 const appRoutes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: 'home', component: FrontPageComponent },
+  { path: '', component: FrontPageComponent },
   { path: 'calculator', component: CalculatorComponent },
   { path: 'article', component: ArticleComponent }
 ];
@@ -22,7 +20,6 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     FrontPageComponent,
-    SidebarMenuComponent,
     ArticleComponent,
     CalculatorComponent
   ],
